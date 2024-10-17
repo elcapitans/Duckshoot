@@ -1,0 +1,183 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    cursor: url('images/crossHair.png') 50 50, auto;
+    background-image: url('images/duckBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+   
+}
+
+
+h2 {
+    display:flex;
+    margin: 0;
+    background-color: green;
+    width: 100%;    
+    text-align: center;     
+    margin: 0;
+    
+}
+
+#gameButton {
+    background: none;
+    border: none; 
+    cursor: url('images/crossHair.png') 50 50, auto;
+    padding: 0;
+    margin: 0; 
+    display: block;
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    transition: transform 0.1s ease;
+}
+.winner{
+    display: flex;
+    background-color: green;
+    width:350px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    
+    
+   
+}
+.loser{
+    display: flex;
+    background-color: red;
+    width:350px;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    
+}
+
+button img {    
+    width: 100%; 
+    height: 100%; 
+}
+#results{
+    display: flex;
+    font-size:x-large;
+    color: bisque;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    
+    
+    
+    
+
+}
+.tryAgain{
+  display: flex;
+  background-color: bisque;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10%;
+  height: 300px;
+  border: 1px solid black;
+  padding-top:10px;
+  width: 200px;
+
+}
+
+
+#tryAgainButton {
+    background-color: green;
+    color: bisque;
+    width: 150px; 
+    height: 60px; 
+    font-size: 20px; 
+    padding: 10px;
+    border-radius: 5px;
+    cursor: url('images/crossHair.png') 50 50, auto;
+    
+   
+}
+#hud{
+    width: 100%; 
+    height: 135px;
+    box-sizing: border-box;
+    background-color: green;    
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#countdown{
+    font-family: 'Digital-7', sans-serif; /* Use a digital-style font if available */
+color: red;
+font-size: 40px;
+background-color: #333;
+border-radius: 10%;
+border: 5px solid black;
+width: 200px;
+text-align: center;
+position: fixed; /* Fixed positioning relative to the viewport */
+top: 0; /* Aligns the element to the top of the viewport */
+left: 50%; /* Centers the element horizontally within the viewport */
+transform: translateX(-50%);
+padding: 10px; /* Optional: for visualization */
+
+}
+
+.ammo {
+    height: 100px;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px;  
+}
+.shell1,.shell2,.shell3,.shell4,.shell5,.shell6,.shell7{
+    width: 25px;
+    height: 80px;
+    
+}
+
+
+#reload{
+    color: bisque;
+    background-color: grey;
+    border-radius: 5px;
+    height: 75px;
+    margin-left: 20px;
+    width: 75px;
+}
+
+.hidden {
+    display: none;
+}
+.opacity{
+    opacity: 90%;
+}
+.hide {
+    opacity:30%; /* Hide shells by default */
+}
+.show {
+    opacity: 1; /* Show shells */
+}
+
+
