@@ -59,9 +59,9 @@ button img {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 10%;
+  border-radius: 10px;
   height: 100px;
-  border: 1px solid black;
+  border: 3px solid black;
   width: 800px;
   font-size: 27px;
 }
@@ -74,11 +74,16 @@ button img {
     justify-content: center;
     background-color: green;
     color: bisque;
-    width: 150px; 
-    height: 60px; 
-    font-size: 17px; 
+    width: 200px; 
+    height: 75px; 
+    font-size: 20px; 
     border-radius: 5px;
     cursor: url('images/crossHair.png') 50 50, auto;
+    text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+        1px 1px 0 black; 
     
    
 }
@@ -96,11 +101,12 @@ button img {
 #countdown{
     font-family: 'Digital-7', sans-serif; /* Use a digital-style font if available */
 color: red;
-font-size: 40px;
+font-size: 60px;
 background-color: #333;
 border-radius: 10%;
 border: 5px solid black;
-width: 200px;
+width: 300px;
+height: 75px;
 text-align: center;
 position: fixed; /* Fixed positioning relative to the viewport */
 top: 0; /* Aligns the element to the top of the viewport */
@@ -111,12 +117,16 @@ padding: 10px; /* Optional: for visualization */
 }
 
 .ammo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     height: 100px;
+    width: 800px;
     gap: 10px;  
 }
 .shell1,.shell2,.shell3,.shell4,.shell5,.shell6,.shell7{
-    width: 25px;
-    height: 80px;
+    width: 40px;
+    height: 115px;
     
 }
 
@@ -125,19 +135,34 @@ padding: 10px; /* Optional: for visualization */
     color: bisque;
     background-color: grey;
     border-radius: 5px;
-    height: 75px;
+    height: 80px;
     margin-left: 20px;
-    width: 75px;
-    font-size: 15px;
+    width: 90px;
+    font-size: 18px;
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black; 
+    font-weight: bold;
 }
 #shoot{
     color: bisque;
+    text-shadow: 
+        -1px -1px 0 black,  
+        1px -1px 0 black,  
+        -1px 1px 0 black,  
+        1px 1px 0 black; 
     background-color: grey;
     border-radius: 5px;
-    height: 75px;
+    height: 80px;
     margin-left: 20px;
+    margin-right: 20px;
     width: 280px;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    
+    
 }
 
 .hidden {

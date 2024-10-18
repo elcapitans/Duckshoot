@@ -18,14 +18,19 @@
 </head>
 <body>
     
-     <h1>Shoot the Duck Game!</h1>
+     <h1 class="title">Shoot the Duck Game!</h1>
      <p id="countdown"></p>
-     <button class="tryAgainButton">TRY AGAIN</button>
+     <button class="tryAgainButton">CLICK TO PLAY</button>
     <button id="gameButton">
         <img src="images/flyingDuck1.png" alt="duck">
     </button>
     <footer id="hud">       
-    <section class="ammo">
+    
+
+
+<section class="ammo">
+    <button id="shoot">(SPACE) SHOOT</button>
+    
     <img class="shell1"src="images\shotgunshell.png" alt="shell">
     <img class="shell2"src="images\shotgunshell.png" alt="shell">
     <img class="shell3"src="images\shotgunshell.png" alt="shell">
@@ -33,10 +38,8 @@
     <img class="shell5"src="images\shotgunshell.png" alt="shell">
     <img class="shell6"src="images\shotgunshell.png" alt="shell">
     <img class="shell7"src="images\shotgunshell.png" alt="shell">
-    
+    <button id="reload">(R) RELOAD</button>
 </section>
-<button id="reload">(R) RELOAD</button>
-<button id="shoot">(SPACE) SHOOT</button>
 <section class="stats">  
     Shots Taken: <span id="shots-taken">0</span>
     Accuracy: <span id="accuracy">0%</span>

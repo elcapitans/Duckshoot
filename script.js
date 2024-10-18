@@ -280,6 +280,7 @@ document.addEventListener('DOMContentLoaded', () => {
         shotsTaken++;
         reduceAmmo();
         updateAccuracy();
+        
 
       }
     }else if(event.code ==='KeyR'){
