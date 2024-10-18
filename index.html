@@ -17,27 +17,25 @@
    
 </head>
 <body>
+    
      <h1>Shoot the Duck Game!</h1>
-    <section class="tryAgain">
+     <button id="tryAgainButton">TRY AGAIN</button>
+    <!-- <section class="tryAgain">
         <button id="tryAgainButton">TRY AGAIN</button>
         Shots Taken: <span id="shots-taken">0</span>
         Accuracy: <span id="accuracy">0%</span>
         Current Score: <span id="currentScore">0</span>
         High Score: <span id="highScore">0</span>
-        </section>
+        </section> -->
     
-    <section id="results">
+    <!-- <section id="results">
         <div class="winner hidden">YOU WIN!</div><div class="loser hidden">YOU LOSE!</div>        
-    </section>
+    </section> -->
     <button id="gameButton">
         <img src="images/flyingDuck1.png" alt="duck">
         
     </button>
     <footer id="hud">       
-    <h2>
-        
-        
-    </h2>
     <section class="ammo">
     <img class="shell1"src="images\shotgunshell.png" alt="shell">
     <img class="shell2"src="images\shotgunshell.png" alt="shell">
@@ -46,11 +44,17 @@
     <img class="shell5"src="images\shotgunshell.png" alt="shell">
     <img class="shell6"src="images\shotgunshell.png" alt="shell">
     <img class="shell7"src="images\shotgunshell.png" alt="shell">
-    <button id="reload">(R) RELOAD</button>
     <p id="countdown"></p>
 </section>
-       
-    </footer>
+<button id="reload">(R) RELOAD</button>
+<button id="shoot">(SPACE) SHOOT</button>
+<section class="stats">  
+    Shots Taken: <span id="shots-taken">0</span>
+    Accuracy: <span id="accuracy">0%</span>
+    Current Score: <span id="currentScore">0</span>
+    High Score: <span id="highScore">0</span>
+    </section>
+</footer>
     <script src="script.js"></script>
 </body>
 </html>
