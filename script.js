@@ -50,7 +50,16 @@ function resetGame() {
   ammoLeft = 7;
   outOfAmmo = false;
   currentScore = 0;
-  timer = 60; 
+  timer = 60;
+  shotsDisplay.textContent=shotsTaken;
+  accuracyDisplay.textContent = 0;
+  currentScoreElement.textContent =0;
+  let shells = [shell1, shell2, shell3, shell4, shell5, shell6, shell7];
+  shells.forEach(shell => {
+    shell.classList.remove('hide');  
+    shell.classList.add('show');     
+  });
+
   if(gameStarted){
     tryAgainButton.classList.add('hidden');
   }
@@ -144,6 +153,7 @@ function updateAccuracy() {
 function updateScore() {
   speed += 5;
   currentScore ++;
+  
   currentScoreElement.textContent = currentScore;
   if (currentScore > highScore) {
     highScore = currentScore;
@@ -187,6 +197,11 @@ function playSound(input) {
 
 
 
+
+
+
+
+
 function reloadAmmo() {
   ammoLeft = 7;
   outOfAmmo = false;
@@ -208,6 +223,8 @@ function reloadAmmo() {
 
 function reduceAmmo() {
   ammoLeft--;
+  shotsTaken ++;
+  shotsDisplay.textContent=shotsTaken;
 
   if (ammoLeft === 0) {
     outOfAmmo = true;
@@ -237,7 +254,8 @@ function reduceAmmo() {
   }else if(ammoLeft === 1){
     shell6.classList.remove('show');
     shell6.classList.add('hide');    
-}
+ 
+  }
 }
 
 
@@ -271,13 +289,11 @@ document.addEventListener('DOMContentLoaded', () => {
         playSound('shotgun');
         playSound('shell');        
         updateScore();
-        shotsTaken++;
         updateAccuracy();
 
       } else if (!isHoveringGameButton && !outOfAmmo) {
         playSound('shotgun');
         playSound('shell');
-        shotsTaken++;
         reduceAmmo();
         updateAccuracy();
         
